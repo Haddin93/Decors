@@ -1,12 +1,14 @@
 import './App.css';
-import Carol from './components/Carol';
-import Header from './components/Header';
+import About from './components/About';
+// import Carol from './components/Carol';
+// import Header from './components/Header';
 
 function App() {
   return (
     <>
-    <Header/>
-    <Carol />
+    {/* <Header/>
+    <Carol /> */}
+    <About/>
     </>
   );
 }
