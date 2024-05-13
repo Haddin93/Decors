@@ -8,6 +8,10 @@
 Nav{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    font-size: 18px;
+}
+Nav:hover{
+    color: orangered !important;
 }
 .header__sticky-sticky-menu {
     position: fixed;
@@ -29,7 +33,18 @@ Nav{
       top: 0;
     }
   }
-
+.navbar {
+    background-color: transparent;
+    position: absolute !important;
+    z-index: 999;
+    width: 100%;
+}
+.call-btn{
+    background-color: #fff !important;
+    border-radius: 20px;
+    color: #292929 !important;
+    padding: 10px 20px !important;
+}
 /* carousel css */
 .slider{
     width: 100%;
@@ -74,118 +89,48 @@ Nav{
   background-image: url('../src/assets/img/interior.jpg');
   border: 2px solid red;
 }
-
-#image{
-  /* height: 370px;
-  width: 550px; */
-  /* margin:10px; */
-  border-radius: 20px;
-  margin-left: 80px;
-  display: block;
-
+.carousel-caption p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 5px 3px 5px #131518;
+    width: 60%;
 }
-
-.lg-sec4-img {
-  padding: 0px;
-  background: #eee;
-  margin-top: 60px;
-  border-radius: 10px;
-  overflow: hidden;
+.carousel-control-prev,.carousel-control-next{
+    display: none !important;
 }
-
-
-/* MainContent.css */
-.main-content {
-  padding: 20px;
+@media(max-width:1200px){
+    .carousel-caption h2{
+        font-size: 45px;
+    }
 }
-
-.main-content h1 {
-  font-size: 24px;
-  margin-bottom: 16px;
+@media(max-width:992px){
+    .carousel-caption h2{
+        font-size: 35px;
+    }
+    .carousel-caption p{
+        font-size: 20px;
+        width: 100%;
+    }
+    .navbar-toggler{
+        background-color: #fff !important;
+    }
 }
-
-.main-content p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 16px;
+@media(max-width:767px){
+    .carousel-caption {
+        position: static !important;
+        padding: 20px 10px !important;
+        background-color: #707070;
+    }
+    .carousel-indicators{
+        display: none !important;
+    }
 }
-
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* Aspect ratio */
-  padding-top: 25px;
-  height: 0;
+@media(max-width:767px){
+    .carousel-caption h2{
+        font-size: 25px;
+    }
+    .carousel-caption p{
+        font-size: 18px;
+    }
 }
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-.bg-primary {
-  position: relative;
-}
-
-
-
-.content-container {
-  position: absolute;
-  z-index: 2; /* Ensure it's above background images */
-}
-
-.overlap-image-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%; /* Adjust width as needed */
-  height: 280%;
-  z-index: 3; /* Ensure it's above content */
-}
-
-
-.latest{
-
-  max-width: 50%;
-  flex-wrap: wrap;
-
-
-}
-.about_img{
-  position: relative;
-}
-.about_sec{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
-  background: #fff;
-  z-index: 999;
-}
-
-.heading{
-  font-family: "Poppins", sans-serif;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start; */
-  /* margin-right: 55%;
-  padding-left: 5%; */
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 40px;
-  margin-inline-start: 0px;
-  display: inline;
-  margin-bottom: 20px;
-  
-
-}
-
-.para{
-  font-family: "Montserrat", sans-serif;
-}
-
